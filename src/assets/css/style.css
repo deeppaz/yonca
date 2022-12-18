@@ -1,0 +1,48 @@
+@font-face {
+  font-family: pixel-font;
+  src: url(../fonts/VT323-Regular.ttf);
+}
+
+html,
+body,
+#root,
+canvas {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.play-button {
+  position: relative;
+  width: auto;
+  display: inline-block;
+  color: #ecf0f1;
+  text-decoration: none;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid 1px #6a4f4b;
+  background: #b9afa5;
+  text-align: center;
+  font-family: pixel-font;
+  font-size: 100px;
+  margin: 12px;
+
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+
+  -webkit-box-shadow: 0px 6px 0px #6a4f4b;
+  -moz-box-shadow: 0px 6px 0px #6a4f4b;
+  box-shadow: 0px 6px 0px #6a4f4b;
+}
+
+.play-button:active {
+  -webkit-box-shadow: 0px 2px 0px #6a4f4b;
+  -moz-box-shadow: 0px 2px 0px #6a4f4b;
+  box-shadow: 0px 2px 0px #6a4f4b;
+  position: relative;
+  top: 4px;
+}

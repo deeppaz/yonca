@@ -31,6 +31,46 @@ export function Model() {
     });
   }, [scene, mixer, playAnimate]);
 
-  return <primitive ref={group} object={scene} dispose={null}  onClick={() => setPlayAnimate(playAnimate == false ? true : false)}/>;
+  return (
+    <group ref={group} dispose={null}>
+      <primitive object={scene} />
+      <primitive
+        object={
+          scene.children[0].children[0].children[0].children[1].children[0]
+            .children
+        }
+      >
+        <Html
+          distanceFactor={0.17}
+          position={[0.075, 0.7, 0.47]}
+          scale={[6, 6, 6]}
+          transform
+          occlude
+          onOcclude={false}
+          center
+        >
+          {playAnimate === false ? (
+            <button
+              onClick={() =>
+                setPlayAnimate(playAnimate == false ? true : false)
+              }
+              className="play-button"
+            >
+              PLAY
+            </button>
+          ) : (
+            <button
+              onClick={() =>
+                setPlayAnimate(playAnimate == false ? true : false)
+              }
+              className="play-button"
+            >
+              STOP
+            </button>
+          )}
+        </Html>
+      </primitive>
+    </group>
+  );
 }
 useGLTF.preload("model.glb");
