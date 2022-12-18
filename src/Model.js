@@ -50,7 +50,7 @@ export function Model() {
           {playAnimate === false ? (
             <button
               onClick={() =>
-                setPlayAnimate(playAnimate == false ? true : false)
+                setPlayAnimate(playAnimate === false ? true : false)
               }
               className="play-button"
             >
@@ -59,7 +59,7 @@ export function Model() {
           ) : (
             <button
               onClick={() =>
-                setPlayAnimate(playAnimate == false ? true : false)
+                setPlayAnimate(playAnimate === false ? true : false)
               }
               className="play-button"
             >

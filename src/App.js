@@ -5,10 +5,12 @@ import {
   PerspectiveCamera,
   Lightformer
 } from "@react-three/drei";
-
+import { useControls } from "leva";
 import { Model } from "./Model";
 
 function Yonca() {
+
+
   return (
     <>
       <OrbitControls
@@ -22,24 +24,22 @@ function Yonca() {
       />
 
       <PerspectiveCamera makeDefault fov={20} position={[3.3, 4, 5]} />
-
       <Model />
-
       <spotLight
-        color={[1, 0.25, 0.7]}
+        color={[0, 3.3, 0.7]}
         intensity={1.5}
         angle={0.6}
-        penumbra={0.5}
-        position={[5, 5, 0]}
+        penumbra={0.9}
+        position={[3, 3, 3]}
         castShadow
         shadow-bias={-0.0001}
       />
       <spotLight
-        color={[0.14, 0.5, 1]}
-        intensity={2}
-        angle={0.6}
-        penumbra={0.5}
-        position={[-5, 5, 0]}
+        color={[-0.4, 1.5, 0.9]}
+        intensity={1.5}
+        angle={0.1}
+        penumbra={0.9}
+        position={[12, 15, -1]}
         castShadow
         shadow-bias={-0.0001}
       />
