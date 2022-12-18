@@ -17,30 +17,30 @@ canvas {
   position: relative;
   width: auto;
   display: inline-block;
-  color: #ecf0f1;
+  color: #73b27f;
   text-decoration: none;
   padding-left: 70px;
   padding-right: 70px;
-  border: solid 1px #6a4f4b;
-  background: #b9afa5;
+  border: solid 1px #7eba7b;
+  background: #d7eed6;
   text-align: center;
   font-family: pixel-font;
   font-size: 45px;
   margin: 12px;
-
+  
   -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
   transition: all 0.1s;
 
-  -webkit-box-shadow: 0px 6px 0px #6a4f4b;
-  -moz-box-shadow: 0px 6px 0px #6a4f4b;
-  box-shadow: 0px 6px 0px #6a4f4b;
+  -webkit-box-shadow: 0px 6px 0px #7cb577;
+  -moz-box-shadow: 0px 6px 0px #7cb577;
+  box-shadow: 0px 6px 0px #7cb577;
 }
 
 .play-button:active {
-  -webkit-box-shadow: 0px 2px 0px #6a4f4b;
-  -moz-box-shadow: 0px 2px 0px #6a4f4b;
-  box-shadow: 0px 2px 0px #6a4f4b;
+  -webkit-box-shadow: 0px 2px 0px #7cb577;
+  -moz-box-shadow: 0px 2px 0px #7cb577;
+  box-shadow: 0px 2px 0px #7cb577;
   position: relative;
   top: 4px;
 }

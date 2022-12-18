@@ -24,7 +24,7 @@ export function Model() {
       if (object instanceof Mesh) {
         object.castShadow = true;
         object.receiveShadow = true;
-        object.material.envMapIntensity = 20;
+        object.material.envMapIntensity = 0;
       }
     });
   }, [scene, mixer, playAnimate]);
