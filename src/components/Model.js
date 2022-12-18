@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Mesh } from "three";
 import { useAnimations, useGLTF, Html } from "@react-three/drei";
-import ModelFile from '../assets/model.glb'
+import ModelFile from "../assets/model.glb";
 
 export function Model() {
   const group = useRef();

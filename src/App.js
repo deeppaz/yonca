@@ -6,7 +6,7 @@ import {
   Environment
 } from "@react-three/drei";
 import { Model } from "./components/Model";
-import Player from "./components/Player";
+import Player from "./components/Player/Player";
 import PureSky from "./assets/kloppenheim_01_puresky_2k.hdr";
 
 function Yonca() {

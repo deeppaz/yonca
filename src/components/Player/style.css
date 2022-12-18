@@ -1,0 +1,22 @@
+.player-song-title {
+  color: #80877f;
+  font-family: pixel-font;
+  font-size: 20px;
+  position: relative;
+  top: 5px;
+}
+
+.player-buttons {
+    margin-top: 15px;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+}
+.player-buttons .player-previous {
+    background-image: url(../../assets/icons/previous.png);
+    background-repeat: no-repeat;
+}
+.player-buttons .player-next {
+    background-image: url(../../assets/icons/next.png);
+    background-repeat: no-repeat;
+}
