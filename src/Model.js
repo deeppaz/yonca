@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useLoader } from "@react-three/fiber";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
-import { Mesh, Scene } from "three";
+import { Mesh } from "three";
 import { useAnimations, useGLTF, Html } from "@react-three/drei";
 
 export function Model() {
