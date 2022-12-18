@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Mesh } from "three";
 import { useAnimations, useGLTF, Html } from "@react-three/drei";
+import ModelFile from '../assets/model.glb'
 
 export function Model() {
   const group = useRef();
-  const { scene, animations } = useGLTF("model.glb", true);
+  const { scene, animations } = useGLTF(ModelFile, true);
   const { actions, mixer } = useAnimations(animations, group);
   const [playAnimate, setPlayAnimate] = useState(false);
 
@@ -24,7 +25,7 @@ export function Model() {
       if (object instanceof Mesh) {
         object.castShadow = true;
         object.receiveShadow = true;
-        object.material.envMapIntensity = 0;
+        object.material.envMapIntensity = 0.5;
       }
     });
   }, [scene, mixer, playAnimate]);
