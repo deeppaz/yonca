@@ -28,6 +28,7 @@ canvas {
   font-family: pixel-font;
   font-size: 30px;
   letter-spacing: 1px;
+  cursor: pointer;
   -webkit-transition: all 0.1s;
   -moz-transition: all 0.1s;
   transition: all 0.1s;

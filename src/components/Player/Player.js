@@ -1,6 +1,8 @@
 import { Html } from "@react-three/drei";
 import React from "react";
 import "./style.css";
+import PreviousIcon from "../../assets/icons/previous.png";
+import NextIcon from "../../assets/icons/next.png";
 
 const Player = () => {
   return (
@@ -19,17 +21,19 @@ const Player = () => {
         </Html>
         <Html
           distanceFactor={0.17}
-          position={[0.7, 0.7, 0.47]}
+          position={[0.62, 0.698, 0.47]}
           scale={[6, 6, 6]}
           transform
           occlude
           onOcclude={false}
           center
         >
-          <div className="player-buttons">
-            <button className="player-previous">.</button>
-            <button className="player-next">.</button>
-          </div>
+          <button className="player-previous">
+            <img className="previous-icon" src={PreviousIcon} alt="previous-icon" />
+          </button>
+          <button className="player-next">
+            <img className="next-icon" src={NextIcon} alt="next-icon" />
+          </button>
         </Html>
       </group>
     </>
