@@ -6,6 +6,7 @@ import {
   Environment
 } from "@react-three/drei";
 import { Model } from "./components/Model";
+import { Samurai } from "./components/Samurai/Samurai";
 import Player from "./components/Player/Player";
 import PureSky from "./assets/kloppenheim_01_puresky_2k.hdr";
 
@@ -28,6 +29,7 @@ function Yonca() {
         ground={{ height: 7, radius: 40, scale: 20 }}
       />
       <Model />
+      <Samurai />
       <Player />
       <spotLight
         color={[0, 3.3, 0.7]}
