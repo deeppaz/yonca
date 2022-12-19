@@ -2,7 +2,7 @@
 
 ## Live
 
-- soon
+- [preview](https://yonca.vercel.app/)
 
 ## Credits
 
