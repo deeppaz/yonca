@@ -4,9 +4,6 @@
 
 - [preview](https://yonca.vercel.app/)
 
-## Credits
-
-- Soon
 
 ## Resource
 
