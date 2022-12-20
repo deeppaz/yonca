@@ -8,6 +8,7 @@
 ## Resource
 
 - [Model](https://skfb.ly/ooJO8)
+- [Model 2](https://skfb.ly/6SYTE)
 - [Environment](https://polyhaven.com/a/kloppenheim_01_puresky)
 
 ## LICENCE
