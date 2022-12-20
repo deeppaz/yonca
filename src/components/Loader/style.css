@@ -1,4 +1,7 @@
 html,
 body {
-  background-color: bisque;
+  /* background-color: bisque; */
+}
+.loading-progress {
+    color: black;
 }
