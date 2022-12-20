@@ -9,7 +9,7 @@ import { Model } from "./components/Model";
 // import { Samurai } from "./components/Samurai/Samurai";
 import Player from "./components/Player/Player";
 import PureSky from "./assets/kloppenheim_01_puresky_2k.hdr";
-import Loading from "./components/Loader/Loading";
+import { Loading } from "./components/Loader/Loading";
 
 function Yonca() {
   return (
@@ -56,11 +56,14 @@ function Yonca() {
 
 function App() {
   return (
-    <Canvas shadows>
-      <Suspense fallback={<Loading />}>
-        <Yonca />
-      </Suspense>
-    </Canvas>
+    <>
+      <Loading />
+      <Canvas shadows>
+        <Suspense fallback={null}>
+          <Yonca />
+        </Suspense>
+      </Canvas>
+    </>
   );
 }
 
