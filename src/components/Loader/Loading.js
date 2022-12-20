@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useProgress, Html } from "@react-three/drei";
 import "./style.css";
 
-export function Loading() {
+export function Loading({ modelLoaded }) {
   const { active, progress, errors, item, loaded, total } = useProgress();
-  console.log(loaded);
+  const [loadedModel, setloadedModel] = useState(false);
+
+  useEffect(() => {
+    setloadedModel(modelLoaded);
+  });
+
   return (
     <>
-      <div className="loader">
-        <span>{Math.floor(progress)}%</span>
-      </div>
+      {loaded === modelLoaded ? (
+        <button>hello</button>
+      ) : (
+        <div className="loader">
+          <span>{Math.floor(progress)}%</span>
+        </div>
+      )}
     </>
   );
 }

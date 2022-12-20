@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   OrbitControls,
@@ -10,6 +10,7 @@ import { Model } from "./components/Model";
 import Player from "./components/Player/Player";
 import PureSky from "./assets/kloppenheim_01_puresky_2k.hdr";
 import { Loading } from "./components/Loader/Loading";
+import Hello from "./components/Loader/Hello";
 
 function Yonca() {
   return (
@@ -55,14 +56,26 @@ function Yonca() {
 }
 
 function App() {
+  const { isLoaded, setIsLoaded } = useState(false);
+
   return (
     <>
-      <Loading />
-      <Canvas shadows>
-        <Suspense fallback={null}>
-          <Yonca />
-        </Suspense>
-      </Canvas>
+      {modelLoaded ? (
+        <>
+          {" "}
+          <Loading />
+          <Canvas shadows>
+            <Suspense fallback={null}>
+              <Yonca />
+            </Suspense>
+          </Canvas>{" "}
+        </>
+      ) : (
+        <>
+          {" "}
+          <Loading modelLoaded={7} />
+        </>
+      )}
     </>
   );
 }
